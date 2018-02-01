@@ -32,6 +32,18 @@ const uglify = new webpack.optimize.UglifyJsPlugin({ // eslint-disable-line
   compress: { warnings: false }
 });
 
+// font awesome
+const fontAwesome =        {
+  test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+  use: [{
+    loader: 'file-loader',
+    options: {
+      name: '[name].[ext]',
+      outputPath: 'fonts/',    // where the fonts will go
+    }
+  }]
+};
+
 // bundle everything
 const config = {
   entry: {
@@ -43,7 +55,7 @@ const config = {
     filename: '[name].bundle.js'
   },
   module: {
-    rules: [javascript, styles]
+    rules: [javascript, styles, fontAwesome]
   },
   plugins: [
     new ExtractTextPlugin('style.css'),

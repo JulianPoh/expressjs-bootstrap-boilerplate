@@ -1,6 +1,6 @@
-# Express + Bootstrap + Pug
+# Express + Bootstrap + Font Awesome + Pug
 
-This boilerplate loads [Bootstrap 4](https://getbootstrap.com/), [jQuery](http://jquery.com/) and [popper.js](https://popper.js.org/) and more useful stuff.  
+This boilerplate loads [Bootstrap 4](https://getbootstrap.com/), [Font Awesome 4](https://fontawesome.com/), [jQuery](http://jquery.com/) and [popper.js](https://popper.js.org/) and more useful stuff.  
 We included everything you need to start a small project from scratch.
 
 The ```npm start``` command will not only start the application, but also watch for changes of your SCSS and JavaScript files, using [webpack](https://webpack.js.org/). The [nodemon](https://nodemon.io/) package is used to automatically restart the server, if your scripts change, while it's running.
