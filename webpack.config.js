@@ -35,7 +35,7 @@ const uglify = new webpack.optimize.UglifyJsPlugin({ // eslint-disable-line
 // bundle everything
 const config = {
   entry: {
-    App: './public/javascript/app.js'
+    app: './public/javascript/app.js'
   },
   devtool: 'source-map',
   output: {
