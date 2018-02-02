@@ -1,5 +1,57 @@
+/**
+  * Contents
+  *
+  *   1. Imports
+  *   2. Starter Template
+  */
+
+/* 1. Imports
+-------------------------------------------*/
+
 @import "bootstrap-custom";
 @import "~bootstrap/scss/bootstrap";
 
 $fa-font-path: "~font-awesome/fonts";
-@import '~font-awesome/scss/font-awesome.scss';
+@import "~font-awesome/scss/font-awesome.scss";
+
+/* 2. Starter Template
+-------------------------------------------*/
+
+body {
+  padding-top: 5rem;
+}
+
+.custom-boilerplate {
+  h1 {
+    color: #217cb9;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.components {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+
+  h2 {
+    color: rgb(143, 143, 143);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.accordion {
+  .card {
+    margin-bottom: 0.25rem;
+  }
+
+  .card-header {
+    padding: 0.25rem;
+
+    .btn-link {
+      font-weight: 700;
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
+  }
+}

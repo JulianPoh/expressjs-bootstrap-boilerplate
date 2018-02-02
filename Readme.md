@@ -13,6 +13,14 @@ The ```npm start``` command will not only start the application, but also watch 
 1. Copy __the variables.env.sample__ file to __variables.env__.
 1. Run ```npm start``` to start the node.js application.
 
+## Development &amp; Production mode
+
+If you want to run the application in development mode, where webpack is watching for changes of SCSS and JavaScript files, etc. simply run the following command:  
+```npm run dev```.
+
+And for production mode use:
+```npm start```
+
 ## Configuration
 
 The configuration of the basic application (environment + port) is done in the __variables.env__ file.  
@@ -29,7 +37,7 @@ The views are located in the __/views/__ directory and we use [Pug](https://gith
 
 ### Watching for changes
 
-The __npm start__ command will recompile all SCSS and JavaScript files automatically using webpack, if changes are detected.
+The __npm run dev__ command will recompile all SCSS and JavaScript files automatically using webpack, if changes are detected.
 
 ## License
 

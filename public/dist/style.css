@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/**
+  * Contents
+  *
+  *   1. Imports
+  *   2. Starter Template
+  */
+/* 1. Imports
+-------------------------------------------*/
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -9287,5 +9295,33 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+/* 2. Starter Template
+-------------------------------------------*/
+body {
+  padding-top: 5rem; }
+
+.custom-boilerplate h1 {
+  color: #217cb9;
+  margin-bottom: 1.5rem; }
+
+.components {
+  margin-top: 2rem;
+  margin-bottom: 5rem; }
+  .components h2 {
+    color: #8f8f8f;
+    font-size: 1.75rem;
+    margin-bottom: 1rem; }
+
+.accordion .card {
+  margin-bottom: 0.25rem; }
+
+.accordion .card-header {
+  padding: 0.25rem; }
+  .accordion .card-header .btn-link {
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map*/

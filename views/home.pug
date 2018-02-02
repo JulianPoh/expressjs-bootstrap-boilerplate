@@ -1,11 +1,153 @@
 extends layout
 
 block content
-    main(role="main")
-        .jumbotron
-            .container
-                h1.display-3 Hello world!
-                p This is a simple express framework boilerplate using pug templates.
-                p
-                    i.fa.fa-edit &nbsp; Have fun coding!
+    nav.navbar.navbar-expan-md.navbar-dark.bg-dark.fixed-top
+        a.navbar-brand(href="#") Navbar
+        button.navbar-toggler(
+            type="button",
+            data-toggle="collapse",
+            data-target="#navbarsExampleDefault",
+            aria-controls="navbarsExampleDefault",
+            aria-expanded="false",
+            aria-label="Toggle navigation"
+        )
+            span.navbar-toggler-icon
+        
+        div#navbarsExampleDefault.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link(href="#")
+                        | Home
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href="#") Link
+                li.nav-item
+                    a.nav-link.disabled(href="#") Disabled
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(
+                        href="#",
+                        id="dropdown01",
+                        data-toggle="dropdown",
+                        aria-haspopup="true",
+                        aria-expanded="false"
+                    ) Dropdown
+                    .dropdown-menu(aria-labelledby="dropdown01")
+                        a.dropdown-item(href="#") Action
+                        a.dropdown-item(href="#") Another Action
+                        a.dropdown-item(href="#") Something else here
+            
+            form.form-inline.my-2.my-lg-0
+                input.form-control.mr-sm-2(type="text", name="q", placeholder="Search", aria-label="Search")
+                button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+    
+    main.container(role="main")
+        .custom-boilerplate
+            h1 Custom Express + Bootstrap 4 Boilerplate
+            p.lead
+                Use this boilerplate as a way to quickly start any new project.
+            p.text-muted
+                i.fa.fa-fw.fa-home
+                | Font Awesome is already built-in and Babel is used to write code with new JavaScripts standards.
+                br
+                i.fa.fa-fw.fa-code
+                | Begin with clearing the contents of this document, add styles using SCSS and add JavaScript using ES6, when needed.
+            p.text-muted
+                Please report bugs or security issues on 
+                a(href="https://github.com/noreading/bootstrap4-custom-boilerplate/issues", target="_blank") Github
+                | .
+        
+        .components
+            .alert.alert-info
+                i.fa.fa-fw.fa-info
+                | Below are examples of dynamic Bootstrap components.
+            
+            h2 Carousel
+
+            div#carouselExampleIndicators.carousel.slide(data-ride="carousel")
+                ol.carousel-indicators
+                    li.ctive(data-target="#carouselExampleIndicators", data-slide-to="0")
+                    li(data-target="#carouselExampleIndicators", data-slide-to="1")
+                    li(data-target="#carouselExampleIndicators", data-slide-to="2")
+
+                .carousel-inner
+                    .carousel-item.active
+                        img.d-block.w-100(src="/images/slides/001.png", alt="First slide")
+                    .carousel-item
+                        img.d-block.w-100(src="/images/slides/002.png", alt="Second slide")
+                    .carousel-item
+                        img.d-block.w-100(src="/images/slides/003.png", alt="Third slide")
+
+                a.carousel-control-prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.sr-only Previous
+
+                a.carousel-control-next(href="#carouselExampleIndicators", role="button", data-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.sr-only Next
+            br
+            h2 Accordion
+
+            div#accordion.accordion
+                .card
+                    div#headingOne.card-header
+                        h5.mb-0
+                            button.btn.btn-link(
+                                data-toggle="collapse",
+                                data-target="#collapseOne",
+                                aria-expanded="true",
+                                aria-controls="collapseOne"
+                            ) Collapsible Group Item #1
                     
+                    div#collapseOne.collapse.show(aria-labelledby="headingOne", data-parent="#accordion")
+                        .card-body
+                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                .card
+                    div#headingTwo.card-header
+                        h5.mb-0
+                            button.btn.btn-link(
+                                data-toggle="collapse",
+                                data-target="#collapseTwo",
+                                aria-expanded="true",
+                                aria-controls="collapseTwo"
+                            ) Collapsible Group Item #2
+                    
+                    div#collapseTwo.collapse(aria-labelledby="headingTwo", data-parent="#accordion")
+                        .card-body
+                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                .card
+                    div#headingThree.card-header
+                        h5.mb-0
+                            button.btn.btn-link(
+                                data-toggle="collapse",
+                                data-target="#collapseThree",
+                                aria-expanded="true",
+                                aria-controls="collapseThree"
+                            ) Collapsible Group Item #3
+                    
+                    div#collapseThree.collapse(aria-labelledby="headingThree", data-parent="#accordion")
+                        .card-body
+                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+            br
+            
+            h2 Modal
+
+            // Button trigger modal
+            button.btn.btn-primary(type="button", data-toggle="modal", data-target="#exampleModal") Launch demo modal
+            
+            div#exampleModal.modal.fade(tabindex="-1", role="dialog", aria-labelledby="exampleModalLabel", aria-hidden="true")
+                .modal-dialog.modal-dialog-centered.modal-lg(role="document")
+                    .modal-content
+                        .modal-header
+                            h5#exampleModalLabel.modal-title Lorem Ipsum
+                            button.close(type="button", data-dismiss="modal", aria-label="Close")
+                        
+                        .modal-body
+                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            p Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+                        
+                        .modal-footer
+                            button.btn.btn-secondary(type="button", data-dismiss="modal") Close
+                            button.btn.btn-primary(type="button") Save changes
