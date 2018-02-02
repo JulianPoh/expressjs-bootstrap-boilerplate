@@ -26,3 +26,11 @@ Just edit it and make it fit to your needs.
 ## Views
 
 The views are located in the __/views/__ directory and we use [Pug](https://github.com/pugjs/pug) as the default template engine.
+
+### Watching for changes
+
+The __npm start__ command will recompile all SCSS and JavaScript files automatically using webpack, if changes are detected.
+
+## License
+
+This project is available under [MIT License](./License.md) and is free for private and commercial usage.

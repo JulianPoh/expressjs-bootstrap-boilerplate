@@ -9,8 +9,6 @@
     "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "assets": "webpack -w --display-max-modules 0"
   },
-  "author": "Dominik Hanke",
-  "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "dotenv": "^5.0.0",
@@ -34,5 +32,10 @@
     "postcss-loader": "^2.0.10",
     "sass-loader": "^6.0.6",
     "webpack": "^3.10.0"
+  },
+  "author": "Dominik Hanke",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/noreading/expressjs-bootstrap-boilerplate"
   }
 }
