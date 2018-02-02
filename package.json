@@ -4,10 +4,10 @@
   "description": "A simple boileplate for express websites",
   "main": "app.js",
   "scripts": {
-    "prod": "node ./app.js",
+    "start": "node ./app.js",
     "watch": "nodemon ./app.js --ignore public/",
-    "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
-    "assets": "webpack -w --display-max-modules 0"
+    "assets": "webpack -w --display-max-modules 0",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
