@@ -22,6 +22,7 @@ app.use((request, response, next) => {
 
 // serves up static files from the public folder. Anything in public/ will just be served up as the file it is
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/.well-known', express.static(path.join(__dirname, '.well-known'), {}))
 
 // set route handling
 app.use('/', routes);
