@@ -8,7 +8,7 @@ They support all major operating systems.
 
 ## 2. Adding the certificate
 
-Open the [variables.env](../variables.env) file you created during the installation of the boilerplate.
+Open the [variables.env](../variables.env.sample) file you created during the installation of the boilerplate.
 
 For [Let's Encrypt](https://letsencrypt.org/) certificates you need to use the "SSL/TLS Security settings" block and remove the hash characters. Add the path to your generated _privkey.pem_ and _fullchain.pem_.
 
@@ -27,7 +27,7 @@ You can use [OpenSSL](https://www.openssl.org/) to generate such a key:
 openssl dhparam -out /var/www/ssl/dh-strong.pem 2048
 ```
 
-You [variables.env](../variables.env) file should then look like this:  
+You [variables.env](../variables.env.sample) file should then look like this:  
 ```
 SSL=on
 SSL_KEY=/etc/letsencrypt/live/your-domain/privkey.pem
