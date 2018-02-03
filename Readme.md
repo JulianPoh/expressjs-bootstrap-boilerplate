@@ -26,6 +26,8 @@ And for production mode use:
 The configuration of the basic application (environment + port) is done in the __variables.env__ file.  
 If you need more settings, that you would like to exclude from Git, you should add them here.
 
+If you want to use TLS for secure connections, read our [Let's Encrypt](./docs/Lets-Encrypt.md) page.
+
 ## Routing
 
 The routing is done in the __/routes/web.js__ file.  
