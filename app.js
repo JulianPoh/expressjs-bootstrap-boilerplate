@@ -56,6 +56,7 @@ app.set('view engine', 'pug')
 // load helpers
 app.use((request, response, next) => {
   response.locals.helpers = helpers
+  response.locals.currentPath = request.path
   next()
 })
 

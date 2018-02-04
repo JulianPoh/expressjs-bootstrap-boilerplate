@@ -17,10 +17,6 @@ $fa-font-path: "~font-awesome/fonts";
 /* 2. Starter Template
 -------------------------------------------*/
 
-body {
-  padding-top: 5rem;
-}
-
 .custom-boilerplate {
   h1 {
     color: #217cb9;
@@ -54,4 +50,8 @@ body {
       width: 100%;
     }
   }
+}
+
+main {
+  padding: 1.5rem 0;
 }

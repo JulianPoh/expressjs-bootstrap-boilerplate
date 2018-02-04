@@ -37,6 +37,10 @@ Just edit it and make it fit to your needs.
 
 The views are located in the __/views/__ directory and we use [Pug](https://github.com/pugjs/pug) as the default template engine.
 
+## Navigation
+
+The navigation items are red from the __helpers.js__ file. If you don't want to use the helper file you can overwrite the navigation in the view file __partials/navbar.pug__.
+
 ### Watching for changes
 
 The __npm run dev__ command will recompile all SCSS and JavaScript files automatically using webpack, if changes are detected.

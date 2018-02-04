@@ -3,7 +3,7 @@ html
     head
         meta(charset="utf-8")
 
-        title= `${title || 'Home'} | ${helpers.siteName}`
+        title= `${title || 'Home'} | My little website`
 
         // Always force latest IE rendering engine (even in intranet) & Chrome Frame
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -20,7 +20,8 @@ html
 
     body
         block header
-        
+            include partials/navbar
+                        
         block content
 
         block footer
