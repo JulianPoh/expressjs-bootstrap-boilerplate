@@ -70,6 +70,7 @@ exports.catchErrors = (fn) => {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
+      status: err.status,
       error: {}
     });
   };
