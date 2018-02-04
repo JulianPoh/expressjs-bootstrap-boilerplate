@@ -3,6 +3,7 @@ const fs = require('fs')
 const https = require('https')
 const express = require('express')
 const helmet = require('helmet')
+const bodyParser = require('body-parser')
 const routes = require('./routes/web')
 const helpers = require('./helpers')
 const errorHandlers = require('./handlers/errorHandlers')
@@ -63,6 +64,10 @@ app.use((request, response, next) => {
 // serves up static files from the public folder. Anything in public/ will just be served up as the file it is
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/.well-known', express.static(path.join(__dirname, '.well-known'), {}))
+
+// takes the raw requests and turns them into usable properties on req.body
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // set route handling
 app.use('/', routes)
