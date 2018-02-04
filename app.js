@@ -43,8 +43,6 @@ if (process.env.SSL === 'on' &&
   }
 }
 
-console.log(tlsOptions);
-
 // create the app
 const app = express()
 
