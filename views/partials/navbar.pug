@@ -38,7 +38,6 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-dark
                             aria-expanded="false"
                         ) #{entry.name}
 
-                    if entry.childs
                         .dropdown-menu(aria-labelledby="dropdown-${index}")
                             each subentry in entry.childs
                                 a.dropdown-item(
